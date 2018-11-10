@@ -7,7 +7,7 @@ import Orders from '@/components/User/Orders'
 import NewAd from '@/components/Ads/NewAd'
 import Home from '@/components/Home'
 import AdList from '@/components/Ads/AdList'
-// import Ad from '@/components/Ads/Ad'
+import Ad from '@/components/Ads/Ad'
 
 Vue.use(Router)
 
@@ -42,6 +42,11 @@ export default new Router({
             path: '/list',
             name: 'list',
             component: AdList
+        },
+        {
+            path: '/ad/:id',
+            name: 'add',
+            component: Ad
         }
     ]
 })
