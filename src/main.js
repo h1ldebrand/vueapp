@@ -3,10 +3,12 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import store from './store'
+import BuyModalComponent from '@/components/Shared/BuyModal'
 import 'vuetify/dist/vuetify.min.css'
 import * as fb from 'firebase'
 
 Vue.use(Vuetify)
+Vue.component('app-buy-modal', BuyModalComponent)
 
 Vue.config.productionTip = false
 
